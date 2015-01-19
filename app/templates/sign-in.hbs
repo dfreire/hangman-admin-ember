@@ -14,7 +14,7 @@
         <input class='form-control' type='email' ref='email' placeholder='' />
     </div>
     <div class='form-group'>
-        <label>Password <a href='/reset-password'>(forgot password)</a></label>
+        <label>Password {{#link-to 'reset-password'}}(forgot password){{/link-to}}</label>
         <input class='form-control' type='password' ref='password' placeholder='' />
     </div>
     <div class='form-group'>
@@ -24,7 +24,7 @@
         <p class='text-center'>or</p>
     </div>
     <div class='form-group'>
-        <a class='btn btn-default btn-block' href='/sign-up'>Sign Up</a>
+        <span class='btn btn-default btn-block'>{{#link-to 'sign-up'}}Sign Up{{/link-to}}</span>
     </div>
 </form>
 </div>
