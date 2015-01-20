@@ -1,12 +1,11 @@
 import Ember from 'ember';
 
-var SignInController = {
+export default Ember.ObjectController.extend({
+	email: "",
+	password: "",
 	actions: {
 		signIn: function() {
-			console.warn("should sign-in", this.email);
+			console.warn("sign-in:", this.email.trim(), this.password);
 		}
-
 	}
-};
-
-export default Ember.ObjectController.extend(SignInController);
+});
