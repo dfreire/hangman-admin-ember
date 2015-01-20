@@ -11,14 +11,17 @@
 <form>
     <div class='form-group'>
         <label>Email</label>
+        {{input type='email' id='email' placeholder='' classNames='form-control'}}
+        <!--
         <input class='form-control' type='email' ref='email' placeholder='' />
+        -->
     </div>
     <div class='form-group'>
         <label>Password {{#link-to 'reset-password'}}(forgot password){{/link-to}}</label>
         <input class='form-control' type='password' ref='password' placeholder='' />
     </div>
     <div class='form-group'>
-        <a class='btn btn-primary btn-block' href='/sign-in'>Sign In</a>
+        <button class='btn btn-primary btn-block' {{action 'signIn'}}>Sign In</button>
     </div>
     <div class='form-group'>
         <p class='text-center'>or</p>
