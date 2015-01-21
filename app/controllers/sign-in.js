@@ -9,8 +9,8 @@ export default Ember.ObjectController.extend({
 				email: this.email.trim(),
 				password: this.password
 			};
-			this.store.createRecord('signInRequest', signInRequest);
-			console.warn('signInRequest', signInRequest);
+			this.store.createRecord('SignIn', signInRequest);
+			console.warn('SignIn', signInRequest);
 		}
 	}
 });
